@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
 
+<!--styles-->
+<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+ <!--scripts-->
+ <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header"><h1>Crystal Collector</h1></header>
+
+    <main>
+
+    <div class="instructions">
+
+        <h2>Instructions:</h2>
+        <p>Player is given a number</p>
+        <p>
+           Each crystal will add a specific number of points to players total score.
+        </p>
+        <p>
+         Game is won when the players total matches the random number.
+        </p>
+        
+    </div>
+    
+    <div class="random-number" id="randNum"></div>
+
+    <div class="crystals" id="img-array">
+        <button id="Crystal1" class="white"><img src="asset/images/crystal1.jpeg" alt=""></button>
+        <button id="Crystal2" class="light blue"><img src="asset/images/crystal2.jpg" alt=""></button>
+        <button id="Crystal3" class="dark blue"><img src="asset/images/crystal3.jpg" alt=""></button>
+        <button id="Crystal4" class="purple"><img src="asset/images/crystal4.jpg" alt=""></button>
+    </div>
+<br>
+    <div class="total-score">
+        <div>Your total score is:</div>
+        <br>
+        <div id="totalScore">0</div>
+    </div>
+
+        <div class="wins-loses">
+            <p>Wins:</p>
+            <p id="wins">0</p>
+            <p>Losses:</p>
+            <p id="losses">0</p>
+        </div>
+
+    </main>
+
+<script type="text/javascript" src="./asset/javascript/game.js"></script>
+
+</body>
+</html>
