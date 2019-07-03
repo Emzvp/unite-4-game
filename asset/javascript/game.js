@@ -101,3 +101,5 @@ $(document).ready(() => {
     }
 
 });
+
+//still need to debug the reset function so that total resets when the random number has been passed
