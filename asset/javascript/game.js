@@ -22,14 +22,14 @@ $(document).ready(() => {
     function win() {
         wins = wins + 1;
         $('#wins').text(wins);
-        resetTwo();
+    
         reset();
     }
 
     function lose() {
         losses = losses + 1;
         $('#losses').text(losses);
-        resetTwo();
+     
         reset();
     }
 
@@ -39,11 +39,11 @@ $(document).ready(() => {
         if (totalScore === randNumber) {
             win();
             reset();
-            resetTwo();
+         
         } else if (totalScore > randNumber) {
             lose();
             reset();
-            resetTwo();
+           
         }
     });
 
@@ -98,6 +98,9 @@ $(document).ready(() => {
              purple = Math.floor(Math.random() * 17) + 1;
 
         }
+         let randNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+          $('#randNum').html(randNumber);
+
     }
 
 });
